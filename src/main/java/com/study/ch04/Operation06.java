@@ -23,6 +23,7 @@ public class Operation06 {
         String name = null;
         System.out.println(name == null);
         System.out.println(name == null);
+        System.out.println("테스트 코드 작성");
     }
 
 }
