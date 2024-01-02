@@ -28,8 +28,9 @@ public class Operation06 {
         System.out.println(name);
         System.out.println(name == null);
         System.out.println(name == null);
+        System.out.println("테스트 코드 작성");
 
-        System.out.println(name.equals(""));
+
         /*
          문자열을 비교할때는 equals를 쓴다 그래서 String 함수를 null 처리하면 함수를 사용 못함
          즉, 클래스 자료형의 함수를 사용하려면 주소가 있어야 한다. 주소가 null 이면 사용 못함
