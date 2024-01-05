@@ -7,7 +7,7 @@ public class Product {
 
     Product(String name, String code, long price) {
         this.name = name;
-        this.name = code;
+        this.code = code;
         this.price = price;
     }
 }
