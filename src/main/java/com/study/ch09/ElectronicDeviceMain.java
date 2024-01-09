@@ -33,7 +33,6 @@ public class ElectronicDeviceMain {
                 SmartPhone smartPhone = (SmartPhone) electronicDevices[i];
                 smartPhone.call();
             }
-
         }
     }
 
