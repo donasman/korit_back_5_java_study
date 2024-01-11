@@ -10,6 +10,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class LambdaMain {
     public static void main(String[] args) {
@@ -63,7 +64,13 @@ public class LambdaMain {
         for (int i = 0; i < 10; i++) {
             numList.add(i + 1);
         }
+        System.out.println(numList);
 
+        List<Integer> newList = numList.stream().filter(num -> num % 2 == 0).collect(Collectors.toList());
+        System.out.println(newList);
+
+        List<Integer> newList2 = newList.stream().map(num -> num * 2).collect(Collectors.toList());
+        System.out.println(newList2);
 
     }
 }
