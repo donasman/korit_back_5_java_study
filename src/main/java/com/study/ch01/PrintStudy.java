@@ -6,28 +6,21 @@ public class PrintStudy {
     public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);
 
-        int[] nums = new int[scanner.nextInt()];
-        int max = nums[0];
-        int min = nums[0];
-        int resultMin = 0;
-        int resultMax = 0;
+       int max = 0;
+       int count = 0;
+       int[] arr = new int[9];
 
-        for(int num : nums) {
-            num = scanner.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
         }
-        System.out.println(nums[1]);
-//            if(num > max) {
-//                max = num;
-//            }
-//            if(num < min) {
-//                min = num;
-//            }
-//            resultMax = max;
-//            resultMin = min;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                count = i+1;
+            }
+        }
+        System.out.println(max +" "+ count);
 
-
-
-        System.out.println(resultMin + " " + resultMax);
 
 
     }
